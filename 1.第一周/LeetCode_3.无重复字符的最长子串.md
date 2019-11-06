@@ -1,4 +1,4 @@
-## LeetCode 3.[无重复字符的最长子串](https://leetcode-cn.com/problems/longest-substring-without-repeating-characters/)
+## [LeetCode 3.无重复字符的最长子串](https://leetcode-cn.com/problems/longest-substring-without-repeating-characters/)
 
 #### 解题思路
 
@@ -21,7 +21,34 @@
 1.  题目没有给出可能出现的字符, 所以 映射表是全部 ascii 表
 2.  在判断某个字符是否重复的时候 不能只考虑映射表, 还需要考虑映射表中记录的位置在头游标的前边还是后边
 
+#### 源码
 
+```C
+int lengthOfLongestSubstring(char * s){
+    int letter[128] = {0};
+    int max_len = 1;
+    int len = 0;
+    if (s[0] == '\0') {
+        return 0;
+    }
+    int i, j;
+    for (i = 0, j = 0; s[i] != '\0' && j <= i; i++) {
+        int index = s[i];
+        
+        if (letter[index] > 0 && letter[index] >= j) {
+            j = letter[index];
+            max_len = (max_len < len) ? len : max_len;
+            len = i - j + 1;
+        } else {
+            len += 1;
+        }
+        letter[index] = i + 1;
+    }
+    max_len = (max_len < len) ? len : max_len;
+    return max_len;
+}
+```
+#### 附录
 
 ---
 
