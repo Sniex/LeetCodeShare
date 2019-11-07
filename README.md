@@ -12,3 +12,5 @@
 [第一周_刘玉东_LeetCode_3](./1.第一周/LeetCode_3.无重复字符的最长子串.md)
 
 [第一周_刘玉东_LeetCode_6](./1.第一周/LeetCode_6.Z字形变换.md)
+
+[第一周_李亚非_LeetCode_151](./1.第一周/LeetCode_151.翻转字符串里的单词.md)
