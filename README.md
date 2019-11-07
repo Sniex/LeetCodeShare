@@ -13,4 +13,6 @@
 
 [第一周_刘玉东_LeetCode_6](./1.第一周/LeetCode_6.Z字形变换.md)
 
-[第一周_李亚非_LeetCode_151](./1.第一周/LeetCode_151.翻转字符串里的单词.md)
+[第一周_李亚非_LeetCode_151](./1.第一周/LeetCode_151.插入字符串里的单词.md)
+
+[第一周 冯博奇 LeetCode_5](./1.第一周/LeetCode_5.最长回文子串.md)
